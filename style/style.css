@@ -4,13 +4,14 @@ html {
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .container {
   height: 100vh;
   width: 100vh;
   margin: 0 auto;
+  padding: 0 1em;
   text-align: center;
   visibility: hidden;
   position: relative;
@@ -30,7 +31,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +42,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
@@ -120,6 +121,10 @@ body {
   display: inline-block;
   max-width: 100%;
   height: auto;
+}
+
+.six>img.lydia-dp {
+  filter: drop-shadow(0 0 10px #00000023);
 }
 
 .six .hat {
@@ -233,6 +238,12 @@ body {
 }
 
 /* Media Queries */
+@media screen and (min-width: 1000px) {
+  .six>img.lydia-dp {
+    margin-left: -1.7em;
+  }
+}
+
 @media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
@@ -280,7 +291,7 @@ body {
   }
 
   .six .hat {
-    width: 50px;
+    /* width: 50px; */
     top: -20px;
   }
 
